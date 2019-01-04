@@ -4,8 +4,15 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+
 server:
   port: 8080
   servlet:
     context-path: /hunterhome
-
+  tomcat:
+    uri-encoding: utf-8

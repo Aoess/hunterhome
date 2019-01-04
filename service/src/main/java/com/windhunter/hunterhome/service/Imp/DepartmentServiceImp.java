@@ -1,4 +1,4 @@
-package com.windhunter.hunterhome.service;
+package com.windhunter.hunterhome.service.Imp;
 
 import com.windhunter.hunterhome.entity.Department;
 import com.windhunter.hunterhome.entity.ResultBean;
@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Service
-public class DepartmentService {
+public class DepartmentServiceImp {
 
     @Autowired
     private DepartmentRepository departmentRepository;

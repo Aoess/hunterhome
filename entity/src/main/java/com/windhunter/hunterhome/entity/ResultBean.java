@@ -14,6 +14,10 @@ public class ResultBean implements Serializable {
         this.bean = bean;
     }
 
+    public ResultBean(int code, String message) {
+        this.code = code;
+        this.message = message;
+    }
     public ResultBean() { }
 
     public int getCode() {

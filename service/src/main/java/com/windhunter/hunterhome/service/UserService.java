@@ -1,11 +1,15 @@
 package com.windhunter.hunterhome.service;
 
-import org.springframework.stereotype.Service;
+import com.windhunter.hunterhome.entity.ResultBean;
 
-@Service
-public class UserService {
+import javax.servlet.http.HttpServletRequest;
 
-    public String test() {
-        return "successs1";
-    }
+public interface UserService {
+
+    public ResultBean login(String user_phone, String user_pwd);
+
+    public ResultBean register(String user_phone, String user_pwd, String code, HttpServletRequest request);
+
+    public ResultBean supplement();
+
 }
