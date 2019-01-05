@@ -38,4 +38,6 @@ public interface UserService {
 
     ResultBean getUserNickname(String user_id);
 
+    ResultBean logout(String user_id);
+
 }
