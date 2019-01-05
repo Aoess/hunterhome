@@ -18,7 +18,7 @@ public interface UserService {
 
     ResultBean setPhoto(String user_id, String user_photo);
 
-    ResultBean setDepartment_id(String user_id, String department_id);
+    ResultBean setDepartment_id(String user_id, int department_id);
 
     ResultBean setClass_Grade(String user_id, String class_grade);
 
@@ -33,10 +33,6 @@ public interface UserService {
     ResultBean getUserByPhone(String user_phone);
 
     ResultBean getUserCount();
-
-    ResultBean getUserPhoto(String user_id);
-
-    ResultBean getUserNickname(String user_id);
 
     ResultBean logout(String user_id);
 

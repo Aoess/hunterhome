@@ -16,3 +16,6 @@ server:
     context-path: /hunterhome
   tomcat:
     uri-encoding: utf-8
+logging:
+  config: classpath:logback-spring.xml
+  path: C:/log

@@ -4,7 +4,7 @@ import com.windhunter.hunterhome.entity.ResultBean;
 
 public interface DepartmentService {
 
-    ResultBean getDepartmentById(String department_id);
+    ResultBean getDepartmentById(int department_id);
 
     ResultBean getDepartmentByName(String department_name);
 
@@ -14,6 +14,6 @@ public interface DepartmentService {
 
     ResultBean addDepartment(String department_name);
 
-    ResultBean setDepartmentById(String department_id, String department_name);
+    ResultBean setDepartmentById(int department_id, String department_name);
 
 }

@@ -20,7 +20,7 @@ public class User implements Serializable {
     private String user_phone;
     @NotBlank(message = "密码不能为空",groups = {passwordUpdate.class})
     @Length(min = 5, max = 15, message = "密码的长度必须在6~15位之间",groups = {passwordUpdate.class})
-    @CannotHaveBlank(groups= {passwordupdate.class})
+    @CannotHaveBlank(groups= {passwordUpdate.class})
     private String user_pwd;
     @NotBlank(message = "昵称不能为空",groups = {nicknameUpdate.class})
     @Length(min = 1, max = 30, message = "昵称的长度必须在1~30位之间",groups = {nicknameUpdate.class})
@@ -37,21 +37,21 @@ public class User implements Serializable {
     @NotBlank(message = "专业代号不能为空",groups = {departmentUpdate.class})
     @Range(min = 1, max = 50, message = "专业代号必须在1-50之间",groups = {departmentUpdate.class})
     private int department_id;
-    @NotBlank(message = "班级不能为空",groups = {ClassGradeUpdate.class})
-    @Length(min = 0, max = 5, message = "班级必须在1-50之间",groups = {ClassGradeUpdate.class})
+    @NotBlank(message = "班级不能为空",groups = {classGradeUpdate.class})
+    @Length(min = 0, max = 5, message = "班级必须在1-50之间",groups = {classGradeUpdate.class})
     private String class_grade;
 
 
     public interface getUsermessage {};
     public interface phoneUpdate {};
     public interface passwordUpdate {};
-    public interface passwordupdate {};
     public interface nicknameUpdate {};
     public interface sexUpdate {};
     public interface photoUpdate {};
     public interface powerUpdate {};
     public interface departmentUpdate {};
-    public interface ClassGradeUpdate {};
+    public interface classGradeUpdate {};
+    public interface userLengthCheck {};
 
     @Override
     public String toString() {

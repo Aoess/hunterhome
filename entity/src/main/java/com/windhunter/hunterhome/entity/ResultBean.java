@@ -43,4 +43,13 @@ public class ResultBean implements Serializable {
     public void setBean(Object bean) {
         this.bean = bean;
     }
+
+    @Override
+    public String toString() {
+        return "ResultBean{" +
+                "code=" + code +
+                ", message='" + message + '\'' +
+                ", bean=" + bean +
+                '}';
+    }
 }

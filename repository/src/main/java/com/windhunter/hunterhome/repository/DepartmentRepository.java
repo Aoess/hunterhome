@@ -9,7 +9,7 @@ import java.util.List;
 public interface DepartmentRepository {
 
     @Select("SELECT * FROM table_department WHERE BINARY department_id = #{department_id}")
-    Department getDepartmentById(@Param("department_id") String department_id);
+    Department getDepartmentById(@Param("department_id") int department_id);
 
     @Select("SELECT * FROM table_department WHERE BINARY department_name = #{department_name}")
     Department getDepartmentByName(@Param("department_name") String department_name);
@@ -21,9 +21,9 @@ public interface DepartmentRepository {
     int getDepartmentCount();
 
     @Insert("INSERT INTO table_department VALUES(null,#{department_name})")
-    Department addDepartment(@Param("department_name") String department_name);
+    void addDepartment(@Param("department_name") String department_name);
 
     @Update("UPDATE table_department SET department_name = #{department_name} WHERE department_id = #{department_id}")
-    void setDepartmentById(@Param("department_id") String department_id, @Param("department_name") String department_name);
+    void setDepartmentById(@Param("department_id") int department_id, @Param("department_name") String department_name);
 
 }

@@ -7,8 +7,8 @@ import org.springframework.validation.annotation.Validated;
 @Mapper
 public interface UserRepository {
 
-    @Select("SELECT user_id,user_phone,user_nickname,user_sex,user_photo,user_power,department_id,class_grade FROM table_user WHERE BINARY user_phone = #{user_phone} AND user_pwd = #{user_pwd}")
-    User Login(@Param("user_phone") String user_phone, @Param("user_pwd") String user_pwd);
+    @Select("SELECT user_id,user_phone,user_nickname,user_sex,user_photo,user_power,department_id,class_grade FROM table_user WHERE BINARY user_phone = #{user_phone} AND BINARY user_pwd = #{user_pwd}")
+    User login(@Param("user_phone") String user_phone, @Param("user_pwd") String user_pwd);
 
     @Insert("INSERT INTO table_user values(#{user.user_id},#{user.user_phone},#{user.user_pwd},#{user.user_nickname},#{user.user_sex},#{user.user_photo},#{user.user_power},#{user.department_id},#{user.class_grade})")
     void register(@Param("user") User user);
@@ -25,7 +25,7 @@ public interface UserRepository {
     void setPhoto(@Param("user_id") String user_id, @Param("user_photo") String user_photo);
 
     @Update("UPDATE table_user SET department_id = #{department_id} WHERE BINARY user_id = #{user_id}")
-    void setDepartment_id(@Param("user_id") String user_id, @Param("department_id") String department_id);
+    void setDepartment_id(@Param("user_id") String user_id, @Param("department_id") int department_id);
 
     @Update("UPDATE table_user SET class_grade = #{class_grade} WHERE BINARY user_id = #{user_id}")
     void setClass_Grade(@Param("user_id") String user_id, @Param("class_grade")String class_grade);
@@ -44,6 +44,9 @@ public interface UserRepository {
 
     @Select("SELECT user_id,user_phone,user_nickname,user_sex,user_photo,user_power,department_id,class_grade FROM table_user WHERE BINARY user_phone = #{user_phone}")
     User getUserByPhone(@Param("user_phone") String user_phone);
+
+    @Select("SELECT COUNT(*) FROM table_user WHERE BINARY user_id = #{user_id} AND BINARY user_pwd = #{user_pwd}")
+    int verficatePwd(String user_id, String user_pwd);
 
     @Select("SELECT COUNT(*) FROM table_user")
     int getUserCount();

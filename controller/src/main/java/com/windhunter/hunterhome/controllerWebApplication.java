@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@EnableTransactionManagement
+@EnableTransactionManagement(proxyTargetClass = true)
 @SpringBootApplication
 public class controllerWebApplication extends SpringBootServletInitializer {
 
