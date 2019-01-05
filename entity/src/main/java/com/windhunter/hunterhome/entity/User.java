@@ -7,40 +7,51 @@ import org.hibernate.validator.constraints.Range;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 public class User implements Serializable {
 
-    @NotBlank(message = "用户id不能为空",groups = {getusermessage.class})
-    @Length(min = 32, max = 35, message = "用户id的长度必须在32~35位之间",groups = {getusermessage.class})
+    @NotBlank(message = "用户id不能为空",groups = {getUsermessage.class})
+    @Length(min = 32, max = 35, message = "用户id的长度必须在32~35位之间",groups = {getUsermessage.class})
     private String user_id;
-    @NotBlank(message = "电话不能为空",groups = {userlogin.class,phoneupdate.class})
-    @Pattern(regexp = "^[1](([3][0-9])|([4][5,7,9])|([5][^4,6,9])|([6][6])|([7][3,5,6,7,8])|([8][0-9])|([9][8,9]))[0-9]{8}$", message = "请输入正确格式的手机号",groups = {userlogin.class,phoneupdate.class})
+    @NotBlank(message = "电话不能为空",groups = {phoneUpdate.class})
+    @Pattern(regexp = "^[1](([3][0-9])|([4][5,7,9])|([5][^4,6,9])|([6][6])|([7][3,5,6,7,8])|([8][0-9])|([9][8,9]))[0-9]{8}$", message = "请输入正确格式的手机号",groups = {phoneUpdate.class})
     private String user_phone;
-    @NotBlank(message = "密码不能为空",groups = {userlogin.class,passwordupdate.class})
-    @Length(min = 5, max = 15, message = "密码的长度必须在6~15位之间",groups = {userlogin.class,passwordupdate.class})
+    @NotBlank(message = "密码不能为空",groups = {passwordUpdate.class})
+    @Length(min = 5, max = 15, message = "密码的长度必须在6~15位之间",groups = {passwordUpdate.class})
     @CannotHaveBlank(groups= {passwordupdate.class})
     private String user_pwd;
-    @NotBlank(message = "昵称不能为空",groups = {userupdate.class})
-    @Length(min = 1, max = 30, message = "昵称的长度必须在1~30位之间",groups = {userupdate.class})
+    @NotBlank(message = "昵称不能为空",groups = {nicknameUpdate.class})
+    @Length(min = 1, max = 30, message = "昵称的长度必须在1~30位之间",groups = {nicknameUpdate.class})
     private String user_nickname;
-    @NotNull(message = "性别不能为空",groups = {userupdate.class})
-    @Range(min = 0, max = 1, message = "性别必须为男1或女0",groups = {userupdate.class})
+    @NotNull(message = "性别不能为空",groups = {sexUpdate.class})
+    @Length(min = 0, max = 1, message = "性别必须为男1或女0",groups = {sexUpdate.class})
     private String user_sex;
+    @NotBlank(message = "头像不能为空",groups = {photoUpdate.class})
+    @Length(min = 1, max = 100, message = "头像的长度必须在1~100位之间",groups = {photoUpdate.class})
     private String user_photo;
+    @NotBlank(message = "权限码不能为空",groups = {powerUpdate.class})
+    @Range(min = 1, max = 100, message = "权限码必须在1-100之间",groups = {powerUpdate.class})
     private int user_power;
+    @NotBlank(message = "专业代号不能为空",groups = {departmentUpdate.class})
+    @Range(min = 1, max = 50, message = "专业代号必须在1-50之间",groups = {departmentUpdate.class})
     private int department_id;
+    @NotBlank(message = "班级不能为空",groups = {ClassGradeUpdate.class})
+    @Length(min = 0, max = 5, message = "班级必须在1-50之间",groups = {ClassGradeUpdate.class})
     private String class_grade;
 
-    public interface getusermessage{};
 
-    public interface userlogin{};
-
-    public interface userupdate{};
-
-    public interface passwordupdate{};
-
-    public interface phoneupdate{};
+    public interface getUsermessage {};
+    public interface phoneUpdate {};
+    public interface passwordUpdate {};
+    public interface passwordupdate {};
+    public interface nicknameUpdate {};
+    public interface sexUpdate {};
+    public interface photoUpdate {};
+    public interface powerUpdate {};
+    public interface departmentUpdate {};
+    public interface ClassGradeUpdate {};
 
     @Override
     public String toString() {
