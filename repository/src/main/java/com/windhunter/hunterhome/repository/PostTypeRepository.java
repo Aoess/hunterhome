@@ -10,7 +10,7 @@ import java.util.List;
 public interface PostTypeRepository {
 
     @Select("SELECT * FROM table_post_type WHERE BINARY type_id = #{type_id}")
-    Type getPostTypeById(@Param("type_id") int type_id);
+    Type getPostTypeById(@Param("type_id") Integer type_id);
 
     @Select("SELECT * FROM table_post_type WHERE BINARY type_name = #{type_name}")
     Type getPostTypeByName(@Param("type_name") String type_name);
@@ -25,6 +25,6 @@ public interface PostTypeRepository {
     void addPostType(@Param("type_name") String type_name);
 
     @Update("UPDATE table_post_type SET type_name = #{type_name} WHERE type_id = #{type_id}")
-    void setPostTypeById(@Param("type_id") int type_id, @Param("type_name") String type_name);
+    void setPostTypeById(@Param("type_id") Integer type_id, @Param("type_name") String type_name);
 
 }

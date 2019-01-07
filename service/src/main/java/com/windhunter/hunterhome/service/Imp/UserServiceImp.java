@@ -4,11 +4,14 @@ import com.windhunter.hunterhome.entity.ResultBean;
 import com.windhunter.hunterhome.entity.User;
 import com.windhunter.hunterhome.repository.UserRepository;
 import com.windhunter.hunterhome.service.UserService;
+import com.windhunter.hunterhome.utils.TokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 import java.util.UUID;
 
 @Transactional
@@ -18,7 +21,7 @@ public class UserServiceImp implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public ResultBean login(String user_phone, String user_pwd) {
+    public ResultBean login(String user_phone, String user_pwd, HttpServletResponse response) {
         User user = userRepository.login(user_phone, user_pwd);
         ResultBean resultBean = new ResultBean();
         int code;
@@ -26,6 +29,8 @@ public class UserServiceImp implements UserService {
         if (null != user) {
             code = 666;
             message = "SUCCESS";
+            String token = TokenUtils.getToken(user.getUser_id(),user.getUser_power());
+            response.setHeader("token",token);
         } else {
             code = 555;
             message = "SORRY,YOUR USER_PHONE OR USER_PWD IS INCORRECT!!";

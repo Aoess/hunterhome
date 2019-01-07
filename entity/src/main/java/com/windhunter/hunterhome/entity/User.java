@@ -31,12 +31,12 @@ public class User implements Serializable {
     @NotBlank(message = "头像不能为空",groups = {photoUpdate.class})
     @Length(min = 1, max = 100, message = "头像的长度必须在1~100位之间",groups = {photoUpdate.class})
     private String user_photo;
-    @NotBlank(message = "权限码不能为空",groups = {powerUpdate.class})
+    @NotNull(message = "权限码不能为空",groups = {powerUpdate.class})
     @Range(min = 1, max = 100, message = "权限码必须在1-100之间",groups = {powerUpdate.class})
-    private int user_power;
-    @NotBlank(message = "专业代号不能为空",groups = {departmentUpdate.class})
+    private Integer user_power;
+    @NotNull(message = "专业代号不能为空",groups = {departmentUpdate.class})
     @Range(min = 1, max = 50, message = "专业代号必须在1-50之间",groups = {departmentUpdate.class})
-    private int department_id;
+    private Integer department_id;
     @NotBlank(message = "班级不能为空",groups = {classGradeUpdate.class})
     @Length(min = 0, max = 5, message = "班级必须在1-50之间",groups = {classGradeUpdate.class})
     private String class_grade;
@@ -116,19 +116,19 @@ public class User implements Serializable {
         this.user_photo = user_photo;
     }
 
-    public int getUser_power() {
+    public Integer getUser_power() {
         return user_power;
     }
 
-    public void setUser_power(int user_power) {
+    public void setUser_power(Integer user_power) {
         this.user_power = user_power;
     }
 
-    public int getDepartment_id() {
+    public Integer getDepartment_id() {
         return department_id;
     }
 
-    public void setDepartment_id(int department_id) {
+    public void setDepartment_id(Integer department_id) {
         this.department_id = department_id;
     }
 

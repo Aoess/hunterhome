@@ -4,17 +4,17 @@ import java.io.Serializable;
 
 public class ResultBean implements Serializable {
 
-    private int code;
+    private Integer code;
     private String message;
     private Object bean;
 
-    public ResultBean(int code, String message, Object bean) {
+    public ResultBean(Integer code, String message, Object bean) {
         this.code = code;
         this.message = message;
         this.bean = bean;
     }
 
-    public ResultBean(int code, String message) {
+    public ResultBean(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

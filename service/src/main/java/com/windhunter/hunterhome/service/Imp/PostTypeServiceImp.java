@@ -4,7 +4,11 @@ import com.windhunter.hunterhome.entity.ResultBean;
 import com.windhunter.hunterhome.repository.PostTypeRepository;
 import com.windhunter.hunterhome.service.PostTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+@Service
+@Transactional
 public class PostTypeServiceImp implements PostTypeService {
 
     @Autowired

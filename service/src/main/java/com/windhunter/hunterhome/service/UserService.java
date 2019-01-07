@@ -3,10 +3,11 @@ package com.windhunter.hunterhome.service;
 import com.windhunter.hunterhome.entity.ResultBean;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public interface UserService {
 
-    ResultBean login(String user_phone, String user_pwd);
+    ResultBean login(String user_phone, String user_pwd, HttpServletResponse response);
 
     ResultBean register(String user_phone, String user_pwd, String code, HttpServletRequest request);
 

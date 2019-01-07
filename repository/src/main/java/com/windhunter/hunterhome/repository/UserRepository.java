@@ -13,7 +13,7 @@ public interface UserRepository {
     @Insert("INSERT INTO table_user values(#{user.user_id},#{user.user_phone},#{user.user_pwd},#{user.user_nickname},#{user.user_sex},#{user.user_photo},#{user.user_power},#{user.department_id},#{user.class_grade})")
     void register(@Param("user") User user);
 
-    void supplementInformation(@Param("user_id") String user_id, @Param("user_nickname") String user_nickname, @Param("user_sex") String user_sex, @Param("user_photo") String user_photo, @Param("department_id") int department_id, @Param("class_grade") String class_grade);
+    void supplementInformation(@Param("user_id") String user_id, @Param("user_nickname") String user_nickname, @Param("user_sex") String user_sex, @Param("user_photo") String user_photo, @Param("department_id") Integer department_id, @Param("class_grade") String class_grade);
 
     @Update("UPDATE table_user SET user_nickname = #{user_nickname} WHERE BINARY user_id = #{user_id}")
     void setNickname(@Param("user_id") String user_id, @Param("user_nickname") String user_nickname);
@@ -25,13 +25,13 @@ public interface UserRepository {
     void setPhoto(@Param("user_id") String user_id, @Param("user_photo") String user_photo);
 
     @Update("UPDATE table_user SET department_id = #{department_id} WHERE BINARY user_id = #{user_id}")
-    void setDepartment_id(@Param("user_id") String user_id, @Param("department_id") int department_id);
+    void setDepartment_id(@Param("user_id") String user_id, @Param("department_id") Integer department_id);
 
     @Update("UPDATE table_user SET class_grade = #{class_grade} WHERE BINARY user_id = #{user_id}")
     void setClass_Grade(@Param("user_id") String user_id, @Param("class_grade")String class_grade);
 
     @Update("UPDATE table_user SET user_power = #{user_power} WHERE BINARY user_id = #{user_id}")
-    void setPower(@Param("user_id") String user_id, @Param("user_power")int user_power);
+    void setPower(@Param("user_id") String user_id, @Param("user_power")Integer user_power);
 
     @Update("UPDATE table_user SET user_pwd = #{user_pwd} WHERE BINARY user_id = #{user_id}")
     void setPwd(@Param("user_id") String user_id, @Param("user_pwd") String user_pwd);

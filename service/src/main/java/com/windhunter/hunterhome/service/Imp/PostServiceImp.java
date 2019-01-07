@@ -1,5 +1,6 @@
 package com.windhunter.hunterhome.service.Imp;
 
+import com.windhunter.hunterhome.entity.Page;
 import com.windhunter.hunterhome.entity.Post;
 import com.windhunter.hunterhome.entity.ResultBean;
 import com.windhunter.hunterhome.service.PostService;
@@ -36,17 +37,18 @@ public class PostServiceImp implements PostService {
     }
 
     @Override
-    public ResultBean getPosts() {
+    public ResultBean getPosts(Post post) {
         return null;
     }
 
     @Override
-    public ResultBean getEnhancePosts() {
+    public ResultBean getEnhancePosts(Post post) {
         return null;
     }
 
     @Override
-    public ResultBean getPostCount() {
+    public ResultBean getPostCount(Post post) {
         return null;
     }
+
 }

@@ -1,5 +1,6 @@
 package com.windhunter.hunterhome.repository;
 
+import com.windhunter.hunterhome.entity.Page;
 import com.windhunter.hunterhome.entity.Post;
 import org.apache.ibatis.annotations.*;
 
@@ -13,15 +14,15 @@ public interface PostRepository {
     void setPost(@Param("post") Post post);
 
     @Update("UPDATE table_post SET post_process = #{post_process} WHERE BINARY post_id = #{post_id}")
-    void setPostProcessById(@Param("post_id") String post_id, @Param("post_process") int post_process);
+    void setPostProcessById(@Param("post_id") String post_id, @Param("post_process") Integer post_process);
 
     @Update("UPDATE table_post SET post_process = #{post_process} WHERE BINARY writer_id = #{post.writer_id}")
-    void setPostProcessByWriterId(@Param("writer_id") String writer_id, @Param("post_process") int post_process);
+    void setPostProcessByWriterId(@Param("writer_id") String writer_id, @Param("post_process") Integer post_process);
 
     @Select("SELECT * FROM table_post WHERE BINARY post_id = #{post_id}")
     Post getPostById(@Param("post_id") String post_id);
 
-    Post getPosts();
+    Post getPosts(Page page);
 
-    Post getPostCount();
+    Integer getPostCount(Post post);
 }

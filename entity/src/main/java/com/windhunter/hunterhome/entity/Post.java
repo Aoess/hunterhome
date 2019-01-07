@@ -20,7 +20,7 @@ public class Post implements Serializable {
     private String post_id;
     private String writer_id;
     private String post_title;
-    private int type_id;
+    private Integer type_id;
     private String post_photo;
     private String post_content;
     private Timestamp post_public_time;
@@ -77,12 +77,12 @@ public class Post implements Serializable {
         this.post_photo = post_photo;
     }
 
-    public int getType_id() {
+    public Integer getType_id() {
 
         return type_id;
     }
 
-    public void setType_id(int type_id) {
+    public void setType_id(Integer type_id) {
         this.type_id = type_id;
     }
 

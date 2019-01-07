@@ -1,68 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java" line="21" mnemonic="2" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="28db7551-da29-44fa-8d69-d970580559f5" name="Default" comment="UserController,校验器,全局异常处理">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_4_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/ValidatorConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerAdvice/ExceptionControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/LikeTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Submission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/TypeService.java" afterDir="false" />
+    <list default="true" id="28db7551-da29-44fa-8d69-d970580559f5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/MissionAdminPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/PostAdminPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/StudioMumberPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/SystemAdminPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/UserAdminPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/PostTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ResouceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhancePost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceSubmission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Power.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/LikeTagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/SubmissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/CommentServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/LikeTagServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/ResourceServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/SubmissionServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/LikeTagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/ResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/SubmissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/PhoneCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/TokenUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/controller_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/controller_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/DepartmentControlller.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/DepartmentControlller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/target/classes/com/windhunter/hunterhome/controller/DepartmentControlller.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/windhunter/hunterhome/controller/DepartmentControlller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/target/classes/com/windhunter/hunterhome/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/windhunter/hunterhome/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/windhunter/hunterhome/controllerWebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/windhunter/hunterhome/controllerWebApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/entity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/entity/entity.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/ResultBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Submission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/Department.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/ResultBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/ResultBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$getusermessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$getusermessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$passwordupdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$passwordupdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$phoneupdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$phoneupdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$userlogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User$userupdate.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/windhunter/hunterhome/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunterhome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hunterhome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repository.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/target/classes/com/windhunter/hunterhome/repository/DepartmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/classes/com/windhunter/hunterhome/repository/DepartmentRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/target/classes/com/windhunter/hunterhome/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/classes/com/windhunter/hunterhome/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/windhunter/hunterhome/service/Imp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/windhunter/hunterhome/service/Imp/UserServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/windhunter/hunterhome/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/windhunter/hunterhome/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,59 +91,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionControllerAdvice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerAdvice/ExceptionControllerAdvice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidatorConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/ValidatorConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserService.java">
+      <file leaf-file-name="MissionAdminPermissionInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/MissionAdminPermissionInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/WebConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,47 +112,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/UserServiceImp.java">
+      <file leaf-file-name="EnhanceSubmission.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceSubmission.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="72">
+              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnhancePost.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhancePost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LikeTagServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/LikeTagServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnhanceComment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceComment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/UserRepository.java">
+      <file leaf-file-name="LikeTag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/LikeTag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="836">
+              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllerWebApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerWebApplication.java">
+      <file leaf-file-name="SystemAdminPermissionInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/SystemAdminPermissionInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state relative-caret-position="90">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DepartmentRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java">
+      <file leaf-file-name="StudioMumberPermissionInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/StudioMumberPermissionInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostAdminPermissionInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/PostAdminPermissionInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -199,7 +204,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find />
+      <find>Post</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Comment</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,54 +216,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Utils/pom.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/java/hunterhome/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/hunterhome/service/UserController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/hunterhome/service/UserService.java" />
-        <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/repository/pom.xml" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Department.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/CannotHaveBlank.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/validation/CannotHaveBlank.java" />
-        <option value="$PROJECT_DIR$/controller/pom.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserServiceImp.java" />
-        <option value="$PROJECT_DIR$/entity/pom.xml" />
-        <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/Type.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostTypeService.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/configer.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/ExceptionHandler/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/LikeTag.java" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/PostType.java" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Type.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java" />
-        <option value="D:/Program Files/feiq/Recv Files/DepartmentServiceImp(2).java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp(2).java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/DepartmentService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/DepartmentControlller.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/TypeService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Post.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostRepository.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostServiceImp.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/controller/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/controller/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/ResultBean.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerWebApplication.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/ValidatorConfiguration.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ExceptionController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerAdvice/ExceptionController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerAdvice/ExceptionControllerAdvice.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Department.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/TypeController.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Type.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/PostTypeController.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Page.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/LikeTagServiceImp.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhancePost.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/PostController.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/LikeTagRepository.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Comment.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/LikeTagService.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/CommentRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/SubmissonService.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Submission.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/CommentServiceImp.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/SubmissionService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostService.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostServiceImp.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/SubmissionRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/SubmissionServiceImp.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/Token.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/ResouceService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/ResourceService.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/PhoneCodeUtils.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/ResourceServiceImp.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ResouceController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/TokenInterceptor.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/DepartmentControlller.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Power.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/TokenUtils.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/UserAdminPermissionInterceptor.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/StudioMumberPermissionInterceptor.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/PostAdminPermissionInterceptor.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/SystemAdminPermissionInterceptor.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/MissionAdminPermissionInterceptor.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/WebConfiguration.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/LikeTag.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceComment.java" />
       </list>
     </option>
   </component>
@@ -282,10 +294,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="272" />
-    <option name="y" value="38" />
+    <option name="x" value="365" />
+    <option name="y" value="57" />
     <option name="width" value="1309" />
-    <option name="height" value="991" />
+    <option name="height" value="983" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -297,7 +309,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,6 +360,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -359,6 +381,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
               <item name="controllerAdvice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
+              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
@@ -526,13 +558,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,12 +582,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.windhunter.hunterhome.service.Imp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.windhunter.hunterhome.Interceptor" />
       <recent name="com.windhunter.hunterhome.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaWorkSpace\hunterhome\service\src\main\java\com\windhunter\hunterhome\service\Imp" />
       <recent name="D:\IdeaWorkSpace\hunterhome\entity\src\main\java\com\windhunter\hunterhome\entity" />
+      <recent name="D:\IdeaWorkSpace\hunterhome\service\src\main\java\com\windhunter\hunterhome\service\Imp" />
       <recent name="D:\IdeaWorkSpace\hunterhome\utils\src\main\java\com\windhunter\hunterhome\utils" />
       <recent name="D:\IdeaWorkSpace\hunterhome\service\src\main\java" />
     </key>
@@ -573,6 +609,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.controllerWebApplication">
+    <configuration name="Power" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.windhunter.hunterhome.entity.Power" />
+      <module name="entity" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.windhunter.hunterhome.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -586,6 +633,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+    </configuration>
+    <configuration name="Power.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="entity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.windhunter.hunterhome.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.windhunter.hunterhome.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.windhunter.hunterhome.entity.Power" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -632,9 +702,13 @@
     <list>
       <item itemvalue="Spring Boot.controllerWebApplication" />
       <item itemvalue="Application.controllerWebApplication" />
+      <item itemvalue="JUnit.Power.test1" />
+      <item itemvalue="Application.Power" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Power" />
+        <item itemvalue="JUnit.Power.test1" />
         <item itemvalue="Application.controllerWebApplication" />
       </list>
     </recent_temporary>
@@ -653,7 +727,8 @@
       <workItem from="1546519003604" duration="29000" />
       <workItem from="1546561438651" duration="19034000" />
       <workItem from="1546647921533" duration="24930000" />
-      <workItem from="1546676186182" duration="4899000" />
+      <workItem from="1546676186182" duration="4967000" />
+      <workItem from="1546820953145" duration="36292000" />
     </task>
     <task id="LOCAL-00001" summary="加入了接口">
       <created>1546592744981</created>
@@ -676,15 +751,29 @@
       <option name="project" value="LOCAL" />
       <updated>1546651599191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UserController,校验器,全局异常处理">
+      <created>1546681124625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546681124625</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Power_test1 - 2019.01.07 at 18h 46m 57s.xml">
+      <configuration name="Power.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Power_test1 - 2019.01.07 at 18h 47m 21s.xml">
+      <configuration name="Power.test1" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60007000" />
+    <option name="totallyTimeSpent" value="96367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="272" y="38" width="1309" height="991" extended-state="0" />
-    <editor active="true" />
+    <frame x="365" y="49" width="1309" height="991" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -710,6 +799,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25986078" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3276644" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -717,7 +807,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867885" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -765,193 +854,163 @@
     <option name="LAST_COMMIT_MESSAGE" value="UserController,校验器,全局异常处理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.1.1.RELEASE/spring-boot-starter-parent-2.1.1.RELEASE.pom">
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="1278">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/UserService.java" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32742">
-          <caret line="1909" column="6" selection-start-line="1909" selection-start-column="6" selection-end-line="1909" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity.java" />
-    <entry file="file://$PROJECT_DIR$/repository/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/util.java" />
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/validation/ManualValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/validation/CannotHaveBlankValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MindaZhaowo/src/main/java/com/mindazhaowo/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="31" column="130" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar!/org/apache/coyote/AbstractProcessorLight.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar!/org/apache/coyote/http11/Http11Processor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="254" selection-start-line="254" selection-end-line="254" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MindaZhaowo/src/main/java/com/mindazhaowo/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/validation/CannotHaveBlank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/feiq/Recv Files/UserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="241" lean-forward="true" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/feiq/Recv Files/DepartmentServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MindaZhaowo/src/main/java/com/mindazhaowo/handleException/MdzwHandleException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3564">
-          <caret line="210" column="35" lean-forward="true" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/LikeTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="108">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/feiq/Recv Files/DepartmentServiceImp(2).java">
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/PostTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/DepartmentServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/DepartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/DepartmentControlller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="354">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1581#1582#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/LikeTagRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1874#1875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/LikeTagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/CommentServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -963,17 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/TypeService.java">
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/CommentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostTypeServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="390">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -982,25 +1034,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="450">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/PostService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1009,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/PostServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="584">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#309#310#0" expanded="true" />
@@ -1025,121 +1070,44 @@
             <element signature="e#761#762#0" expanded="true" />
             <element signature="e#835#836#0" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/SubmissionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/PostTypeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="151" column="35" selection-start-line="151" selection-start-column="35" selection-end-line="151" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/ResultBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="50" column="47" lean-forward="true" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/DepartmentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="432">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="24" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Submission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/ValidatorConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="649" column="34" selection-start-line="649" selection-start-column="34" selection-end-line="649" selection-end-column="34" />
-          <folding>
-            <element signature="e#26222#26223#0" expanded="true" />
-            <element signature="e#26265#26266#0" expanded="true" />
-            <element signature="e#26470#26471#0" expanded="true" />
-            <element signature="e#26528#26529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerAdvice/ExceptionControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="324">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1148,20 +1116,306 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="144">
+          <caret line="9" column="85" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/UserServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/SubmissionServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="80">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/com/windhunter/hunterhome/repository/SubmissionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/PhoneCodeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/ValidatorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-592">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ResouceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/MindaZhaowo/src/main/java/com/mindazhaowo/pojo/UserState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controllerWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="31" column="85" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/DepartmentControlller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/ResourceServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3126">
+          <caret line="186" column="31" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/Power.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+          <folding>
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/windhunter/hunterhome/utils/TokenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/UserAdminPermissionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/StudioMumberPermissionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/PostAdminPermissionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/SystemAdminPermissionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/Interceptor/MissionAdminPermissionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/configuration/WebConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhancePost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceSubmission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/LikeTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/windhunter/hunterhome/service/Imp/LikeTagServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/windhunter/hunterhome/entity/EnhanceComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
           </folding>
         </state>
       </provider>
