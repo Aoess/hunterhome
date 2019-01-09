@@ -41,7 +41,8 @@ public class UserServiceImp implements UserService {
                 LoginManager.AddLoginflag(user.getUser_id(),token);
             }
             //把用户信息存到缓存
-            redisTemplate.opsForValue().set(user.getUser_id(),user,5,TimeUnit.HOURS);
+            redisTemplate.opsForValue().set(user.getUser_id(),user,30,TimeUnit.MINUTES);
+            redisTemplate.opsForValue().set(token,user.getUser_id(),5,TimeUnit.HOURS);
             Cookie cookie = new Cookie("token",token);
             response.addCookie(cookie);
             response.setHeader("token",token);
@@ -238,7 +239,7 @@ public class UserServiceImp implements UserService {
         User user = (User) redisTemplate.opsForValue().get(user_id);
         if(user == null) {
             user = userRepository.getUserById(user_id);
-            redisTemplate.opsForValue().set(user.getUser_id(),user,5,TimeUnit.HOURS);
+            redisTemplate.opsForValue().set(user.getUser_id(),user,30,TimeUnit.MINUTES);
         }
         ResultBean resultBean = new ResultBean();
         resultBean.setBean(user);

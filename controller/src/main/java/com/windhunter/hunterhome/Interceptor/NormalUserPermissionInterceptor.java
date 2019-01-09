@@ -5,6 +5,8 @@ import com.windhunter.hunterhome.utils.LoginManager;
 import com.windhunter.hunterhome.utils.TokenUtils;
 import net.minidev.json.JSONObject;
 import net.minidev.json.JSONValue;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,6 +19,8 @@ import java.util.Map;
 @Component
 public class NormalUserPermissionInterceptor implements HandlerInterceptor {
 
+    @Autowired
+    private RedisTemplate redisTemplate;
     /*
      * 视图渲染之后的操作
      */
@@ -57,12 +61,16 @@ public class NormalUserPermissionInterceptor implements HandlerInterceptor {
                 switch ((int)valid.get("Result")) {
                     case 0 : {
                         JSONObject jsonObject = (JSONObject) valid.get("data");
-                        //权限判断 ,本人操作或者有管理员权限就放行
-                        Power power = new Power((long) jsonObject.get("user_power"));
-                        if(power.isHasNUpermission()) {
-                            request.setAttribute("user_id",jsonObject.get("user_id"));
-                            request.setAttribute("power",power);
-                            return true;
+                        String user_id = (String) jsonObject.get("user_id");
+                        //必须通过登录管理器才能证明此用户处于安全的登录状态
+                        if(user_id != null && user_id.equals(redisTemplate.opsForValue().get(token))) {
+                            //权限判断 ,本人操作或者有管理员权限就放行
+                            Power power = new Power((long) jsonObject.get("user_power"));
+                            if(power.isHasNUpermission()) {
+                                request.setAttribute("user_id",user_id);
+                                request.setAttribute("power",power);
+                                return true;
+                            }
                         }
                         request.setAttribute("cause","token error please login again!");
                         break;
