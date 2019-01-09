@@ -36,25 +36,13 @@ public class UserAdminPermissionInterceptor implements HandlerInterceptor {
      */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object obj) throws Exception {
-        Map<String, Object> valid = TokenUtils.valid(request.getHeader("token"));
-        switch ((int)valid.get("Result")) {
-            case 0 : {
-                //权限判断 ,本人操作或者有管理员权限就放行
-                if(valid.get("user_id").equals(request.getParameter("user_id")) || new Power((int)valid.get("user_power")).isHasNUpermission()) {
-                    return true;
-                }
-                request.setAttribute("cause","token error please login again!");
-                break;
-            }case 1 : {
-                request.setAttribute("cause","token expire!");
-                break;
-            }default:{
-                request.setAttribute("cause","token error please login again!");
-                break;
-            }
+        System.out.println("进入用户管理器拦截器");
+        Power user_power = (Power) request.getAttribute("power");
+        if(user_power.isHasUApermission()){
+            return true;
         }
+        request.setAttribute("cause","Permission lack");
         request.getRequestDispatcher("/token/tokenError.do").forward(request,response);
-
         return false;
     }
 

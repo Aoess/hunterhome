@@ -1,5 +1,10 @@
 package com.windhunter.hunterhome.entity;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.Range;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
@@ -14,12 +19,25 @@ public class Comment implements Serializable {
     FOREIGN KEY (writer_id) REFERENCES table_user(user_id)
             )ENGINE=INNODB DEFAULT CHARSET=UTF8;*/
 
+    @NotBlank(message = "评论id不能为空",groups = {getCommentmessage.class})
+    @Length(min = 32, max = 35, message = "评论id的长度必须在32~35位之间",groups = {getCommentmessage.class})
     private String comment_id;
+    @NotBlank(message = "评论人id不能为空",groups = {updateWriter.class})
+    @Length(min = 32, max = 35, message = "评论人id的长度必须在32~35位之间",groups = {updateWriter.class})
     private String writer_id;
+    @NotBlank(message = "评论文章id不能为空",groups = {updateArticleid.class})
+    @Length(min = 32, max = 35, message = "评论文章id的长度必须在32~35位之间",groups = {updateArticleid.class})
     private String article_id;
     private String comment_content;
     private Timestamp comment_public_time;
-    private String comment_process;
+    @NotNull(message = "权限码不能为空",groups = {updateCProcess.class})
+    @Range(min = 1, max = 10, message = "权限码格式不对",groups = {updateCProcess.class})
+    private Integer comment_process;
+
+    public interface getCommentmessage{};
+    public interface updateWriter{};
+    public interface updateArticleid{};
+    public interface updateCProcess{};
 
     @Override
     public String toString() {
@@ -73,11 +91,11 @@ public class Comment implements Serializable {
         this.comment_public_time = comment_public_time;
     }
 
-    public String getComment_process() {
+    public Integer getComment_process() {
         return comment_process;
     }
 
-    public void setComment_process(String comment_process) {
+    public void setComment_process(Integer comment_process) {
         this.comment_process = comment_process;
     }
 }

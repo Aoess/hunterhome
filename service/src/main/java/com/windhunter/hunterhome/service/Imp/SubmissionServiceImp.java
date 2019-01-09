@@ -6,11 +6,15 @@ import com.windhunter.hunterhome.entity.Submission;
 import com.windhunter.hunterhome.repository.SubmissionRepository;
 import com.windhunter.hunterhome.service.SubmissionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.UUID;
 
+@Service
+@Transactional
 public class SubmissionServiceImp implements SubmissionService {
     @Autowired
     SubmissionRepository submissionRepository;
@@ -47,7 +51,7 @@ public class SubmissionServiceImp implements SubmissionService {
     }
 
     @Override
-    public ResultBean getSubmissions(Submission submission) {
+    public ResultBean getSubmissions(Submission submission, int current_page,int page_number) {
         Page page = new Page();
         return new ResultBean(666,"SUCCESS",submissionRepository.getSubmissions(page));
     }
@@ -58,7 +62,7 @@ public class SubmissionServiceImp implements SubmissionService {
     }
 
     @Override
-    public ResultBean getEnhanceSubmissions(Submission submission) {
+    public ResultBean getEnhanceSubmissions(Submission submission, int current_page,int page_number) {
         return null;
     }
 

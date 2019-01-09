@@ -19,9 +19,9 @@ public interface PostService{
 
     ResultBean getEnhancePostById(String post_id);
 
-    ResultBean getPosts(Post post);
+    ResultBean getPosts(Post post, int current_page,int page_number);
 
-    ResultBean getEnhancePosts(Post post);
+    ResultBean getEnhancePosts(Post post,int current_page,int page_number);
 
     ResultBean getPostCount(Post post);
 }

@@ -40,7 +40,7 @@ public class MissionAdminPermissionInterceptor implements HandlerInterceptor {
         switch ((int)valid.get("Result")) {
             case 0 : {
                 //权限判断 ,本人操作或者有教师权限就放行
-                if(new Power((int)valid.get("user_power")).isHasMApermission()) {
+                if(new Power((long)valid.get("power")).isHasMApermission()) {
                     return true;
                 }
                 request.setAttribute("cause","token error please login again!");

@@ -8,7 +8,7 @@ public interface CommentService {
 
     ResultBean addComment(Comment comment);
     
-    ResultBean setComment(Comment comment);
+    ResultBean setCommentContent(String comment_id, String comment_content);
 
     ResultBean setCommentProcessById(String comment_id, int Comment_process);
 
@@ -18,9 +18,9 @@ public interface CommentService {
 
     ResultBean getEnhanceCommentById(String Comment_id);
 
-    ResultBean getComments(Comment comment);
+    ResultBean getComments(Comment comment, int current_page,int page_number);
 
-    ResultBean getEnhanceComments(Comment comment);
+    ResultBean getEnhanceComments(Comment comment, int current_page,int page_number);
 
     ResultBean getCommentCount(Comment comment);
 }

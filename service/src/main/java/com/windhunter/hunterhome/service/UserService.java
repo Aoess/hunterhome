@@ -1,17 +1,18 @@
 package com.windhunter.hunterhome.service;
 
 import com.windhunter.hunterhome.entity.ResultBean;
+import com.windhunter.hunterhome.entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public interface UserService {
 
-    ResultBean login(String user_phone, String user_pwd, HttpServletResponse response);
+    ResultBean login(String user_phone, String user_pwd, String autoLogin, HttpServletResponse response);
 
     ResultBean register(String user_phone, String user_pwd, String code, HttpServletRequest request);
 
-    ResultBean supplementInformation(String user_id, String user_nickname, String user_sex, String user_photo, int department_id, String class_grade);
+    ResultBean supplementInformation(User user);
 
     ResultBean setNickname(String user_id, String user_nickname);
 
@@ -35,6 +36,10 @@ public interface UserService {
 
     ResultBean getUserCount();
 
-    ResultBean logout(String user_id);
+    ResultBean logout(String user_id, HttpServletResponse response);
+
+    ResultBean getUserPhoto(String user_id);
+
+    ResultBean getUserNickname(String user_id);
 
 }

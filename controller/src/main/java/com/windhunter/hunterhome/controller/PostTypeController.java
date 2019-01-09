@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -19,7 +20,7 @@ public class PostTypeController {
     private PostTypeService postTypeService;
 
     @RequestMapping("/getTypeById.do")
-    public ResultBean getTypeById(@Validated(Type.getTypeInfo.class) Type type, BindingResult br) {
+    public ResultBean getTypeById(@RequestBody @Validated(Type.getTypeInfo.class) Type type, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());
@@ -30,7 +31,7 @@ public class PostTypeController {
     }
 
     @RequestMapping("/getTypeByName.do")
-    public ResultBean getTypeByName(@Validated(Type.updateTypeName.class) Type type, BindingResult br) {
+    public ResultBean getTypeByName(@RequestBody @Validated(Type.updateTypeName.class) Type type, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());
@@ -50,8 +51,8 @@ public class PostTypeController {
         return postTypeService.getTypeCount();
     };
 
-    @RequestMapping("/addType.do")
-    ResultBean addType(@Validated(Type.updateTypeName.class) Type type, BindingResult br) {
+    @RequestMapping("/SystemAdmin/addType.do")
+    ResultBean addType(@RequestBody @Validated(Type.updateTypeName.class) Type type, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());
@@ -61,8 +62,8 @@ public class PostTypeController {
         return bean;
     }
 
-    @RequestMapping("/setTypeById.do")
-    ResultBean setTypeById(@Validated({Type.updateTypeName.class,Type.getTypeInfo.class}) Type type, BindingResult br) {
+    @RequestMapping("/SystemAdmin/setTypeById.do")
+    ResultBean setTypeById(@RequestBody @Validated({Type.updateTypeName.class,Type.getTypeInfo.class}) Type type, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());

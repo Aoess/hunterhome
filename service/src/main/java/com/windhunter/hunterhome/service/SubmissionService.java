@@ -16,11 +16,11 @@ public interface SubmissionService {
 
     ResultBean deleteSubmissionById(String worker_id, String task_id);
 
-    ResultBean getSubmissions(Submission submission);
+    ResultBean getSubmissions(Submission submission, int current_page,int page_number);
 
     ResultBean getEnhanceSubmissionById(Submission submission);
 
-    ResultBean getEnhanceSubmissions(Submission submission);
+    ResultBean getEnhanceSubmissions(Submission submission, int current_page,int page_number);
 
     ResultBean getSubmissionCount(Submission submission);
 }

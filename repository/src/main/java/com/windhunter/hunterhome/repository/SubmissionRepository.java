@@ -2,14 +2,12 @@ package com.windhunter.hunterhome.repository;
 
 import com.windhunter.hunterhome.entity.Page;
 import com.windhunter.hunterhome.entity.Submission;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 
 import java.util.List;
 
+@Mapper
 public interface SubmissionRepository {
 
     @Insert("INSERT INTO table_submission VALUES(#{submission.worker_id},#{submission.task_id},#{submission.task_achievement},#{submission.submission_time},#{submission.submission_level})")

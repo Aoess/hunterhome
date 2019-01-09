@@ -12,6 +12,14 @@ public class Page implements Serializable {
 
     public Page(){
     }
+
+    public Page(Integer current_page, Integer pages_total, Object entity, Integer page_number) {
+        this.current_page = current_page;
+        this.pages_total = pages_total;
+        this.entity = entity;
+        this.page_number = page_number;
+    }
+
     @Override
     public String toString() {
         return "Page{" +

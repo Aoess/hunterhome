@@ -4,6 +4,7 @@ import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jose.crypto.MACVerifier;
 import net.minidev.json.JSONObject;
+import net.minidev.json.JSONValue;
 
 import java.text.ParseException;
 import java.util.Date;
@@ -36,16 +37,15 @@ public class TokenUtils {
         return jwsObject.serialize();
     }
 
-    public static String getToken(String user_id, int user_power) {
+    public static String getToken(String user_id, int user_power, Long time) {
         //获取生成token
-
         Map<String, Object> map = new HashMap<>();
         map.put("user_id", user_id);
         map.put("user_power", user_power);
         //生成时间
         map.put("sta", new Date().getTime());
         //过期时间
-        map.put("exp", new Date().getTime()+6);
+        map.put("exp", new Date().getTime()+time);
         try {
             String token = TokenUtils.creatToken(map);
             System.out.println("token="+token);
@@ -85,7 +85,6 @@ public class TokenUtils {
                 //判断是否过期
                 if (nowTime > expTime) {
                     //已经过期
-                    resultMap.clear();
                     resultMap.put("Result", 1);
 
                 }

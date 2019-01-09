@@ -20,7 +20,7 @@ public class Power implements Serializable {
     private boolean HasNUpermission;
 
 
-    public Power(Integer user_power) {
+    public Power(Long user_power) {
         HasNUpermission = user_power % 2 == 1 ? true : false;
         user_power /= 2;
         HasSMpermission = user_power % 2 == 1 ? true : false;

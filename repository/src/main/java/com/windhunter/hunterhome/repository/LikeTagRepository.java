@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
+@Mapper
 public interface LikeTagRepository {
 
     @Insert("INSERT INTO table_liketag VALUES(#{liketag.liketag_id},#{liketag.user_id},#{liketag.article_id},#{liketag.liketag_public_time})")
@@ -21,8 +22,37 @@ public interface LikeTagRepository {
     @Select("SELECT * FROM table_liketag WHERE BINARY liketag_id = #{liketag.liketag_id},")
     LikeTag getLikeTagById(@Param("liketag") String liketag_id);
 
-    //@Select()
-    List<LikeTag> getLikeTags(Page page);
+    @Select("SELECT * FROM table_liketag WHERE BINARY user_id = #{user_id} AND BINARY article_id = #{user_id}")
+    LikeTag getLikeTagByUidAndAid(@Param("user_id") String user_id, @Param("article_id") String article_id);
 
-    int getLikeTagCount(@Param("liketag") LikeTag likeTag);
+    @Select("<script>"
+                + "SELECT * FROM table_liketag"
+                + "<where>"
+                    + "<if test='likeTag.user_id != null'>"
+                        + "AND BINARY user_id = #{likeTag.user_id} "
+                    + "</if>"
+                    + "<if test='likeTag.article_id != null'>"
+                        + "AND article_id = #{likeTag.article_id} "
+                    + "</if>"
+                + "</where>"
+                + "ORDER BY liketag_public_time "
+                + "<if test='likeTag.liketag_public_time != null'>"
+                    + " DESC "
+                + "</if>"
+                + "LIMIT #{startTag}, #{number}"
+            + "</script>")
+    List<LikeTag> getLikeTags(@Param("likeTag")LikeTag likeTag, @Param("startTag")Integer startTag, @Param("number")Integer number);
+
+    @Select("<script>"
+                + "SELECT COUNT(*) FROM table_liketag"
+                + "<where>"
+                    + "<if test='liketag.user_id != null'>"
+                        + "AND BINARY user_id = #{liketag.user_id} "
+                    + "</if>"
+                    + "<if test='liketag.article_id != null'>"
+                        + "AND article_id = #{liketag.article_id} "
+                    + "</if>"
+                + "</where>"
+            + "</script>")
+    Integer getLikeTagCount(@Param("liketag") LikeTag likeTag);
 }

@@ -18,6 +18,25 @@ public class EnhancePost extends Post {
                 '}';
     }
 
+    public void inputPostInfo(Post post) {
+        this.setPost_id(post.getPost_id());
+        this.setPost_content(post.getPost_content());
+        this.setPost_photo(post.getPost_photo());
+        this.setPost_process(post.getPost_process());
+        this.setPost_public_time(post.getPost_public_time());
+        this.setPost_title(post.getPost_title());
+        this.setType_id(post.getType_id());
+        this.setWriter_id(post.getWriter_id());
+    }
+
+    public EnhancePost() {
+
+    }
+
+    public EnhancePost(Post post) {
+        inputPostInfo(post);
+    }
+
     public String getUser_photo() {
         return user_photo;
     }

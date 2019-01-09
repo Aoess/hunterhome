@@ -1,5 +1,10 @@
 package com.windhunter.hunterhome.entity;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.Range;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
@@ -17,17 +22,33 @@ public class Post implements Serializable {
     FOREIGN KEY (writer_id) REFERENCES table_user(user_id)
     )ENGINE=INNODB DEFAULT CHARSET=UTF8;*/
 
+    @NotBlank(message = "帖子id不能为空",groups = {getPostmessage.class})
+    @Length(min = 32, max = 35, message = "帖子id的长度必须在32~35位之间",groups = {getPostmessage.class})
     private String post_id;
+    @NotBlank(message = "发帖人id不能为空",groups = {updatePostWriter.class})
+    @Length(min = 32, max = 35, message = "发帖人id的长度必须在32~35位之间",groups = {updatePostWriter.class})
     private String writer_id;
+    @NotBlank(message = "帖子名不能为空",groups = {updatePostTitle.class})
+    @Length(min = 3, max = 30, message = "帖子id的长度必须在3~30位之间",groups = {updatePostTitle.class})
     private String post_title;
+    @NotNull(message = "类型码不能为空",groups = {updateTypeId.class})
+    @Range(min = 0, max = 20, message = "类型码格式不对",groups = {updateTypeId.class})
     private Integer type_id;
     private String post_photo;
     private String post_content;
     private Timestamp post_public_time;
-    private String post_process;
+    @NotNull(message = "权限码不能为空",groups = {updateProcess.class})
+    @Range(min = 1, max = 10, message = "权限码格式不对",groups = {updateProcess.class})
+    private Integer post_process;
 
     public Post(){
     }
+
+    public interface getPostmessage{};
+    public interface updatePostWriter{};
+    public interface updatePostTitle{};
+    public interface updateTypeId{};
+    public interface updateProcess{};
 
     @Override
     public String toString() {
@@ -43,11 +64,11 @@ public class Post implements Serializable {
                 '}';
     }
 
-    public String getPost_process() {
+    public Integer getPost_process() {
         return post_process;
     }
 
-    public void setPost_process(String post_process) {
+    public void setPost_process(Integer post_process) {
         this.post_process = post_process;
     }
 

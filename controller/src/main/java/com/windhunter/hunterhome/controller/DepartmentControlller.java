@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -19,7 +20,7 @@ public class DepartmentControlller {
     private DepartmentService departmentService;
 
     @RequestMapping("/getDepartmentById.do")
-    public ResultBean getDepartmentById(@Validated(Department.getDepartmentInfo.class) Department department, BindingResult br) {
+    public ResultBean getDepartmentById(@RequestBody @Validated(Department.getDepartmentInfo.class) Department department, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());
@@ -30,7 +31,7 @@ public class DepartmentControlller {
     }
 
     @RequestMapping("/getDepartmentByName.do")
-    public ResultBean getDepartmentByName(@Validated(Department.updateDepartmentName.class) Department department, BindingResult br) {
+    public ResultBean getDepartmentByName(@RequestBody @Validated(Department.updateDepartmentName.class) Department department, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());
@@ -50,8 +51,8 @@ public class DepartmentControlller {
         return departmentService.getDepartmentCount();
     }
 
-    @RequestMapping("/addDepartment.do")
-    public ResultBean addDepartment(@Validated(Department.updateDepartmentName.class) Department department, BindingResult br) {
+    @RequestMapping("/SystemAdmin/addDepartment.do")
+    public ResultBean addDepartment(@RequestBody @Validated(Department.updateDepartmentName.class) Department department, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());
@@ -61,8 +62,8 @@ public class DepartmentControlller {
         return bean;
     }
 
-    @RequestMapping("/setDepartmentById.do")
-    public ResultBean setDepartmentById(@Validated({Department.getDepartmentInfo.class,Department.getDepartmentInfo.class}) Department department, BindingResult br) {
+    @RequestMapping("/SystemAdmin/setDepartmentById.do")
+    public ResultBean setDepartmentById(@RequestBody @Validated({Department.getDepartmentInfo.class,Department.getDepartmentInfo.class}) Department department, BindingResult br) {
         ResultBean bean = null;
         if (br.getErrorCount() > 0) {
             bean = new ResultBean(230, br.getAllErrors().get(0).getDefaultMessage());

@@ -40,7 +40,7 @@ public class StudioMumberPermissionInterceptor implements HandlerInterceptor {
         switch ((int)valid.get("Result")) {
             case 0 : {
                 //权限判断 ,本人操作或者有工作室成员权限就放行
-                if(valid.get("user_id").equals(request.getParameter("user_id")) || new Power((int)valid.get("user_power")).isHasSMpermission()) {
+                if(new Power((long)valid.get("power")).isHasSMpermission()) {
                     return true;
                 }
                 request.setAttribute("cause","token error please login again!");

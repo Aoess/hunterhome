@@ -53,6 +53,10 @@ public class User implements Serializable {
     public interface classGradeUpdate {};
     public interface userLengthCheck {};
 
+    public User() {
+
+    }
+
     @Override
     public String toString() {
         return "User{" +
