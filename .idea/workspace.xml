@@ -50,8 +50,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="222" column="45" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
+            <state relative-caret-position="146">
+              <caret line="210" column="10" lean-forward="true" selection-start-line="210" selection-start-column="10" selection-end-line="210" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -363,176 +363,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Imp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hunterhome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hunterhome" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -720,7 +550,7 @@
       <workItem from="1546820953145" duration="36496000" />
       <workItem from="1546907311641" duration="23219000" />
       <workItem from="1546933907670" duration="18775000" />
-      <workItem from="1546993923753" duration="47549000" />
+      <workItem from="1546993923753" duration="47985000" />
     </task>
     <task id="LOCAL-00001" summary="加入了接口">
       <created>1546592744981</created>
@@ -771,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547035350125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1月10号">
+      <created>1547095279056</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547095279056</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -783,10 +620,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186114000" />
+    <option name="totallyTimeSpent" value="186550000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="250" y="66" width="1309" height="983" extended-state="0" />
+    <frame x="250" y="66" width="1309" height="983" extended-state="1" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
@@ -845,7 +682,8 @@
     <MESSAGE value="权限系统,基本业务完善,实体类继承" />
     <MESSAGE value="差作业发布和提交.待测试版本" />
     <MESSAGE value="差作业发布和提交.待测试版本(权限拦截器修改版)" />
-    <option name="LAST_COMMIT_MESSAGE" value="差作业发布和提交.待测试版本(权限拦截器修改版)" />
+    <MESSAGE value="1月10号" />
+    <option name="LAST_COMMIT_MESSAGE" value="1月10号" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1267,8 +1105,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/windhunter/hunterhome/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="222" column="45" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
+        <state relative-caret-position="146">
+          <caret line="210" column="10" lean-forward="true" selection-start-line="210" selection-start-column="10" selection-end-line="210" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
