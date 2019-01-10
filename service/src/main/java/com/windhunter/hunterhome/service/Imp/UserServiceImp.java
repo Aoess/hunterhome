@@ -70,7 +70,7 @@ public class UserServiceImp implements UserService {
                 user = new User();
                 user.setUser_pwd(user_pwd);
                 user.setUser_power(1);
-                user.setUser_photo("default.png");
+                user.setUser_photo("1.png");
                 user.setUser_phone(user_phone);
                 user.setUser_nickname("User"+user_phone.substring(7,11));
                 user.setDepartment_id(1);
@@ -270,10 +270,9 @@ public class UserServiceImp implements UserService {
 
 
     @Override
-    public ResultBean logout(String user_id, HttpServletResponse response) {
-        Cookie cookie = new Cookie("token","logout");
-        response.addCookie(cookie);
-        response.setHeader("token","logout");
+    public ResultBean logout(HttpServletRequest request) {
+        redisTemplate.delete(request.getAttribute("token"));
+        redisTemplate.delete(request.getAttribute("user_ids"));
         ResultBean resultBean = new ResultBean();
         resultBean.setMessage("SUCCESS");
         resultBean.setCode(666);

@@ -64,5 +64,5 @@ public interface PostRepository {
                     + "</if>"
                 + "</where>"
             + "</script>")
-    Integer getPostCount(@Param("post") Post post);
+    Long getPostCount(@Param("post") Post post);
 }

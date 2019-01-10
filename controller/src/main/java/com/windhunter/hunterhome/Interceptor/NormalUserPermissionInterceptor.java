@@ -64,11 +64,12 @@ public class NormalUserPermissionInterceptor implements HandlerInterceptor {
                         String user_id = (String) jsonObject.get("user_id");
                         //必须通过登录管理器才能证明此用户处于安全的登录状态
                         if(user_id != null && user_id.equals(redisTemplate.opsForValue().get(token))) {
-                            //权限判断 ,本人操作或者有管理员权限就放行
+                            //权限判断
                             Power power = new Power((long) jsonObject.get("user_power"));
                             if(power.isHasNUpermission()) {
                                 request.setAttribute("user_id",user_id);
                                 request.setAttribute("power",power);
+                                request.setAttribute("token",token);
                                 return true;
                             }
                         }
@@ -93,6 +94,9 @@ public class NormalUserPermissionInterceptor implements HandlerInterceptor {
                     }
                 }
             }
+        }
+        else {
+            request.setAttribute("cause","token inex");
         }
         request.getRequestDispatcher("/token/tokenError.do").forward(request,response);
         return false;

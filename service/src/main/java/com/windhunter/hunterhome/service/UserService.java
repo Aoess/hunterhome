@@ -36,7 +36,7 @@ public interface UserService {
 
     ResultBean getUserCount();
 
-    ResultBean logout(String user_id, HttpServletResponse response);
+    ResultBean logout(HttpServletRequest request);
 
     ResultBean getUserPhoto(String user_id);
 

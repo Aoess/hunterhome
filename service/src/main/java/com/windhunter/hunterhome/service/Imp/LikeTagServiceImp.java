@@ -30,7 +30,7 @@ public class LikeTagServiceImp implements LikeTagService {
         likeTag.setArticle_id(article_id);
         likeTag.setUser_id(user_id);
         likeTag.setLiketag_id(UUID.randomUUID().toString().replace("-",""));
-        likeTag.setLiketag_public_time(new Timestamp(new Date().getTime()));
+        likeTag.setLiketag_public_time(new Timestamp(System.currentTimeMillis()));
         likeTagRepository.addLikeTag(likeTag);
         return new ResultBean(666,"SUCCESS",null);
     }
@@ -61,7 +61,7 @@ public class LikeTagServiceImp implements LikeTagService {
     @Override
     public ResultBean getLikeTags(LikeTag likeTag, int current_page,int page_number) {
         tagInfoVerficate(likeTag);
-        Integer tagCount = likeTagRepository.getLikeTagCount(likeTag);
+        Long tagCount = likeTagRepository.getLikeTagCount(likeTag);
         int total_page = (int) Math.ceil(tagCount / page_number);
         List<LikeTag> likeTags =likeTagRepository.getLikeTags(likeTag,current_page * page_number, page_number);
         Page page = new Page(current_page+1, total_page,likeTags, page_number);
@@ -72,7 +72,10 @@ public class LikeTagServiceImp implements LikeTagService {
     @Override
     public ResultBean getLikeTagCount(LikeTag likeTag) {
         tagInfoVerficate(likeTag);
-        Integer liketagCount = likeTagRepository.getLikeTagCount(likeTag);
+        Long liketagCount = likeTagRepository.getLikeTagCount(likeTag);
+        if(liketagCount == null) {
+            liketagCount = 0l;
+        }
         ResultBean resultBean = new ResultBean(666,"SUCCESS",liketagCount);
         return resultBean;
     }
@@ -80,14 +83,16 @@ public class LikeTagServiceImp implements LikeTagService {
     //这个先不写
     @Override
     public ResultBean getEnhanceLikeTags(LikeTag likeTag, int current_page,int page_number) {
-        List<LikeTag> tagLists = ( List<LikeTag>)getLikeTags(likeTag,current_page,page_number).getBean();
+        ResultBean likeTagbean = getLikeTags(likeTag,current_page,page_number);
+        Page page = (Page) likeTagbean.getBean();
+        List<LikeTag> tagLists = (List<LikeTag>) page.getEntity();
         List<EnhanceLikeTag> enhanceTagList = new ArrayList<>(tagLists.size());
         //循环对列表中的post进行加强操作
         for (int i = 0; i < tagLists.size(); i++) {
             enhanceTagList.add(likeTagEnhance(tagLists.get(i)));
         }
-        ResultBean resultBean = new ResultBean(666, "SUCCESS", enhanceTagList);
-        return resultBean;
+        page.setEntity(enhanceTagList);
+        return likeTagbean;
     }
 
     //这个先不写

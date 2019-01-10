@@ -29,7 +29,7 @@ public class CommentServiceImp implements CommentService {
     @Override
     public ResultBean addComment(Comment comment) {
         comment.setComment_id(UUID.randomUUID().toString().replace("-",""));
-        comment.setComment_public_time(new Timestamp(new Date().getTime()));
+        comment.setComment_public_time(new Timestamp(System.currentTimeMillis()));
         comment.setComment_process(1);
         if(comment.getComment_content() == null) {
             comment.setComment_content("default.png");
@@ -73,7 +73,7 @@ public class CommentServiceImp implements CommentService {
     @Override
     public ResultBean getComments(Comment comment, int current_page,int page_number) {
         commentInfoVerficate(comment);
-        Integer commentCount = commentRepository.getCommentCount(comment);
+        Long commentCount = commentRepository.getCommentCount(comment);
         Integer total_page = (int)Math.ceil(commentCount/page_number);
         List<Comment> commentList =  (List<Comment>)commentRepository.getComments(comment,current_page * page_number ,page_number);
         return new ResultBean(666,"SUCCESS",commentList);
@@ -81,18 +81,24 @@ public class CommentServiceImp implements CommentService {
 
     @Override
     public ResultBean getEnhanceComments(Comment comment, int current_page,int page_number) {
-        List<Comment> commentList = (List<Comment>)getComments(comment,current_page,page_number).getBean();
+        ResultBean commentbean = getComments(comment,current_page,page_number);
+        Page page = (Page) commentbean.getBean();
+        List<Comment> commentList = (List<Comment>) page.getEntity();
         List<EnhanceComment> enhanceComments = new ArrayList<>(commentList.size());
         for(int i = 0; i<commentList.size(); i++){
             enhanceComments.add(commentEnhance(commentList.get(i)));
         }
-        return new ResultBean(666,"SUCCESS",enhanceComments);
+        page.setEntity(enhanceComments);
+        return commentbean;
     }
 
     @Override
     public ResultBean getCommentCount(Comment comment) {
         commentInfoVerficate(comment);
-        Integer commentCount = commentRepository.getCommentCount(comment);
+        Long commentCount = commentRepository.getCommentCount(comment);
+        if(commentCount == null) {
+            commentCount = 0l;
+        }
         ResultBean resultBean = new ResultBean(666,"SUCCESS",commentCount);
         return resultBean;
     }
@@ -103,7 +109,7 @@ public class CommentServiceImp implements CommentService {
         enhanceComment.setWriter_photo((String) userService.getUserPhoto(comment.getComment_id()).getBean());
         LikeTag likeTag = new LikeTag();
         likeTag.setArticle_id(enhanceComment.getArticle_id());
-        enhanceComment.setLiketag_count((Long)likeTagService.getLikeTagCount(likeTag).getBean());
+        enhanceComment.setLiketag_count((Long) likeTagService.getLikeTagCount(likeTag).getBean());
         return enhanceComment;
     }
     private static void commentInfoVerficate(Comment comment){

@@ -35,16 +35,16 @@ public class ManualValidation {
 	}
 
 	//对post权限码进行改造
-	public static int processTransform(int process,int defaultInt) {
-		if(process < 0 || process > 9) {
+	public static int processTransform(Integer process,Integer defaultInt) {
+		if(process == null || process < 0 || process > 9) {
 			process = defaultInt;
 		}
 		return process;
 	}
 
 	//对type权限码进行改造
-	public static int typeIdTransform(int type_id,int defaultInt) {
-		if(type_id < 0 || type_id > 9) {
+	public static int typeIdTransform(Integer type_id,Integer defaultInt) {
+		if(type_id == null || type_id < 0 || type_id > 9) {
 			type_id = defaultInt;
 		}
 		return type_id;

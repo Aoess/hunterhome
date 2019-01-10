@@ -54,5 +54,5 @@ public interface LikeTagRepository {
                     + "</if>"
                 + "</where>"
             + "</script>")
-    Integer getLikeTagCount(@Param("liketag") LikeTag likeTag);
+    Long getLikeTagCount(@Param("liketag") LikeTag likeTag);
 }

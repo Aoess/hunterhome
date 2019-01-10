@@ -219,8 +219,8 @@ public class UserController {
     }
 
     @RequestMapping("/NormalUser/logout.do")
-    public  ResultBean logout(HttpServletRequest request, HttpServletResponse response) {
-        ResultBean bean = userService.logout((String) request.getAttribute("user_id"),response);
+    public  ResultBean logout(HttpServletRequest request) {
+        ResultBean bean = userService.logout(request);
         return bean;
     }
 }

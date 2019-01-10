@@ -59,5 +59,5 @@ public interface CommentRepository {
                     + "</if>"
                 + "</where>"
             + "</script>")
-    Integer getCommentCount(@Param("comment") Comment comment);
+    Long getCommentCount(@Param("comment") Comment comment);
 }

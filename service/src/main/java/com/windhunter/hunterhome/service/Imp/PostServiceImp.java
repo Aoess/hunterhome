@@ -37,7 +37,7 @@ public class PostServiceImp implements PostService {
 
     @Override
     public ResultBean addPost(Post post) {
-        Timestamp ts = new Timestamp(new Date().getTime());
+        Timestamp ts = new Timestamp(System.currentTimeMillis());
         post.setPost_public_time(ts);
         post.setPost_process(1);
         post.setPost_id(UUID.randomUUID().toString().replace("-", ""));
@@ -93,7 +93,7 @@ public class PostServiceImp implements PostService {
         //校验
         postInfoVerficate(post);
         //获得总数量
-        Integer postCount = postRepository.getPostCount(post);
+        Long postCount = postRepository.getPostCount(post);
         //算出总页数
         int total_page = (int) Math.ceil(postCount/page_number);
         //封装一个page对象,获取post列表
@@ -107,21 +107,23 @@ public class PostServiceImp implements PostService {
     @Override
     public ResultBean getEnhancePosts(Post post, int current_page, int page_number) {
         //调用其他业务方法获取普通的post列表
-        List<Post> postList = (List<Post>) getPosts(post, current_page, page_number).getBean();
+        ResultBean postbean = getPosts(post, current_page, page_number);
+        Page page = (Page) postbean.getBean();
+        List<Post> postList = (List<Post>) page.getEntity();;
         List<EnhancePost> enhancePostList = new ArrayList<>(postList.size());
         //循环对列表中的post进行加强操作
         for(int i = 0; i < postList.size(); i++) {
             enhancePostList.add(postEnhance(postList.get(i)));
         }
-        ResultBean resultBean = new ResultBean(666,"SUCCESS",enhancePostList);
-        return resultBean;
+        page.setEntity(enhancePostList);
+        return postbean;
     }
 
     @Override
     public ResultBean getPostCount(Post post) {
         //校验
         postInfoVerficate(post);
-        Integer postcount = postRepository.getPostCount(post);
+        Long postcount = postRepository.getPostCount(post);
         ResultBean resultBean = new ResultBean(666,"SUCCESS",post);
         return resultBean;
     }
@@ -151,7 +153,7 @@ public class PostServiceImp implements PostService {
         String writer_id = ManualValidation.UUIDtransform(post.getWriter_id(),null);
         post.setWriter_id(writer_id);
         //校验流程码
-        int process = ManualValidation.processTransform(post.getPost_process(),'0');
+        int process = ManualValidation.processTransform(post.getPost_process(),0);
         post.setPost_process(process);
         //校验类型码
         int type_id = ManualValidation.typeIdTransform(post.getType_id(),0);

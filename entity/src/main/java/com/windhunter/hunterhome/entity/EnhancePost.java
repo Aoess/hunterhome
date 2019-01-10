@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class EnhancePost extends Post {
     private String nick_name;
-    private Long liketag_count;
-    private Long comment_count;
+    private long liketag_count;
+    private long comment_count;
     private String user_photo;
 
     @Override
@@ -50,11 +50,11 @@ public class EnhancePost extends Post {
         return comment_count;
     }
 
-    public void setComment_count(Long comment_count) {
+    public void setComment_count(long comment_count) {
         this.comment_count = comment_count;
     }
 
-    public Long getLiketag_count() {
+    public long getLiketag_count() {
 
         return liketag_count;
     }
